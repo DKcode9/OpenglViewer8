@@ -74,13 +74,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\EmptyViewer\frame_timer.cpp" />
-    <ClCompile Include="..\EmptyViewer\load_mesh.cpp" />
-    <ClCompile Include="..\EmptyViewer\main.cpp" />
+    <ClCompile Include="frame_timer.cpp" />
+    <ClCompile Include="load_mesh.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\EmptyViewer\frame_timer.h" />
-    <ClInclude Include="..\EmptyViewer\load_mesh.h" />
+    <ClInclude Include="frame_timer.h" />
+    <ClInclude Include="load_mesh.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

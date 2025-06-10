@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\EmptyViewer\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\EmptyViewer\frame_timer.cpp">
+    <ClCompile Include="frame_timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\EmptyViewer\load_mesh.cpp">
+    <ClCompile Include="load_mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\EmptyViewer\frame_timer.h">
+    <ClInclude Include="frame_timer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\EmptyViewer\load_mesh.h">
+    <ClInclude Include="load_mesh.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
