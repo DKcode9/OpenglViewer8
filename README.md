@@ -13,11 +13,11 @@ To run the project in Visual Studio 2022, follow these steps:
 5.Press Ctrl + F5 to compile, debug, and build the project.
 ------------------------------------------------------------------------------------------------------
 *result Screenshot*
-Immediate Mode
+Q1.Immediate Mode
 main.cpp result image
 ![image](https://github.com/user-attachments/assets/b02beaa6-0f2f-4fca-8cc3-97fac3bd5d04)
 
-Vertex Array
+Q2.Vertex Array
 main.cpp result image
 ![image](https://github.com/user-attachments/assets/0d948f4b-14ee-4549-8868-c2b7e6a0782b)
 
