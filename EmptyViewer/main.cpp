@@ -53,13 +53,13 @@ int main() {
     glEnable(GL_DEPTH_TEST);
     glDisable(GL_CULL_FACE); // Back-face culling off
 
-    // --- 노멀 자동 정규화 및 컬러 머티리얼 활성화 ---
+	// activate lighting
     glEnable(GL_NORMALIZE);
     glEnable(GL_COLOR_MATERIAL);
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
     glColor3f(1.0f, 1.0f, 1.0f);
 
-    // 버니 모델 로드
+	//load bunny mesh
     load_mesh("bunny.obj");
 
     //light
@@ -74,12 +74,12 @@ int main() {
     glLightfv(GL_LIGHT0, GL_DIFFUSE, lightDiffuse);
     glLightfv(GL_LIGHT0, GL_SPECULAR, lightSpecular);
 
-    // 조명 방향 (1,1,1)
+	// light direction  (1, 1, 1) normalized
     glm::vec3 lightDirection = glm::normalize(glm::vec3(1.0f, 1.0f, 1.0f));
     float lightPos[] = { lightDirection.x, lightDirection.y, lightDirection.z, 0.0f };
     glLightfv(GL_LIGHT0, GL_POSITION, lightPos);
 
-    // 머티리얼
+	//material
     GLfloat mat_ka_kd[] = { 1.0f, 1.0f, 1.0f, 1.0f };
     GLfloat mat_ks[] = { 0.0f, 0.0f, 0.0f, 1.0f };
     glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ka_kd);
@@ -87,7 +87,7 @@ int main() {
     glMaterialfv(GL_FRONT, GL_SPECULAR, mat_ks);
     glMaterialf(GL_FRONT, GL_SHININESS, 0.0f);
 
-    // 타이머 초기화
+	//init timer
     init_timer();
     int frameCount = 0;
     double totalTime = 0.0;
@@ -110,7 +110,7 @@ int main() {
         glTranslatef(0.1f, -1.0f, -1.5f);
         glScalef(10.0f, 10.0f, 10.0f);
 
-        // 타이머 시작
+		// start the timer
         start_timing();
 
         // Immediate Mode
@@ -125,7 +125,7 @@ int main() {
         }
         glEnd();
 
-        // 타이머 종료 및 경과 시간(초) 반환
+		//stop the timer and calculate FPS
         double elapsed = stop_timing();
         totalTime += elapsed;
         frameCount++;
